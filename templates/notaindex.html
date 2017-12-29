@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+
+<style type="text/css">
+	
+	@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Shadows+Into+Light');
+
+	.color_letra{ 
+		color: rgb(190,190,190); 
+		text-align: center;
+	}
+
+	.fuente{font-family: 'Shadows Into Light' , cursive;}
+
+	.afuente{font-family: 'Indie Flower', cursive;}
+
+	.color_fondo{ background-color: rgb(60,60,60); }	
+
+	.alineacion{ align-content: center; }
+
+	.boton_rojo{
+		background-color: rgb(0,0,0);
+		color:rgb(200,0,0);
+		font-family: 'Shadows Into Light', cursive;
+		text-align: center;
+	}
+
+	.boton_verde{
+		background-color: rgb(0,100,0);
+		color: rgb(0,200,0);
+		font-family: 'Indie Flower', cursive;
+		text-align: center;
+	}
+</style>
+
+
+
+<html>
+<head>
+	<title>Flask Server</title>
+</head>
+<body class="color_fondo">
+	<div>
+		<div>
+			<h1 class = "color_letra afuente">Hola {{name}}</h1>
+			<h3 class="color_letra afuente">Bienvenido a este server, {{name}}</h3>
+			<h3 class="color_letra afuente">Este server tiene como proposito controlar los GPIO de la Raspberry pi</h3>
+			<h3 class="color_letra afuente">¿Cual led quieres encender, {{name}}?</h3>
+		</div>
+	</div>
+
+	<div class = "row">
+		<div class = "col-md-6">
+			<a href="led1on">
+				<button type="submit" class="btn btn-danger btn-lg btn-block">LED Rojo</button>
+			</a>
+		</div>
+		<div class="col-md-6">
+			<a href="led2on">
+				<button type="submit" class="btn btn-success btn-lg btn-block">LED Verde</button>
+			</a>
+			
+		</div>
+		
+	</div>
+		
+</body>
+</html>
